@@ -1,0 +1,131 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>False</UseWindowsForms>
+    <ApplicationIcon>House.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="pics\**" />
+    <EmbeddedResource Remove="pics\**" />
+    <None Remove="pics\**" />
+    <Page Remove="pics\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="audio\coldWind.wav" />
+    <None Remove="audio\creepyWind.wav" />
+    <None Remove="audio\doorSlam1.wav" />
+    <None Remove="audio\doorSqueak1.wav" />
+    <None Remove="audio\doorSqueak2.wav" />
+    <None Remove="audio\doorSqueakLong1.wav" />
+    <None Remove="audio\lab1.wav" />
+    <None Remove="audio\lab2.wav" />
+    <None Remove="audio\ominous1.wav" />
+    <None Remove="audio\rainEffect.wav" />
+    <None Remove="audio\rainThunder1.wav" />
+    <None Remove="audio\rainThunderInside2.wav" />
+    <None Remove="audio\rumble.wav" />
+    <None Remove="audio\stairsWood1.wav" />
+    <None Remove="audio\stairsWood2.wav" />
+    <None Remove="audio\stairsWood3.wav" />
+    <None Remove="audio\stairsWood4.wav" />
+    <None Remove="audio\thunder1.wav" />
+    <None Remove="backgrounds\attic.jpg" />
+    <None Remove="backgrounds\basement.jpg" />
+    <None Remove="backgrounds\bedroom.jpg" />
+    <None Remove="backgrounds\front.jpg" />
+    <None Remove="backgrounds\hall.jpg" />
+    <None Remove="backgrounds\kitchen.jpg" />
+    <None Remove="backgrounds\lab.jpg" />
+    <None Remove="backgrounds\pot.jpg" />
+    <None Remove="backgrounds\table.jpg" />
+    <None Remove="backgrounds\underbed.jpg" />
+    <None Remove="icons\icon.png" />
+    <None Remove="icons\inventoryIcon.png" />
+    <None Remove="pictures\cat.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="audio\coldWind.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\creepyWind.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\doorSlam1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\doorSqueak1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\doorSqueak2.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\doorSqueakLong1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\lab1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\lab2.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\ominous1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\rainEffect.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\rainThunder1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\rainThunderInside2.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\rumble.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\stairsWood1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\stairsWood2.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\stairsWood3.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\stairsWood4.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="audio\thunder1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="House.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="backgrounds\attic.jpg" />
+    <Resource Include="backgrounds\basement.jpg" />
+    <Resource Include="backgrounds\bedroom.jpg" />
+    <Resource Include="backgrounds\front.jpg" />
+    <Resource Include="backgrounds\hall.jpg" />
+    <Resource Include="backgrounds\kitchen.jpg" />
+    <Resource Include="backgrounds\lab.jpg" />
+    <Resource Include="backgrounds\pot.jpg" />
+    <Resource Include="backgrounds\underbed.jpg" />
+    <Resource Include="icons\icon.png" />
+    <Resource Include="pictures\cat.jpg" />
+    <Resource Include="pictures\group.png" />
+  </ItemGroup>
+
+</Project>

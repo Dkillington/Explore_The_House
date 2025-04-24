@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="WPFTutorial.View.UserControls.EndPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFTutorial.View.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="800">
+    <Grid Background="White" Height="500" Width="800">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="247*"/>
+            <ColumnDefinition Width="553*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".1*"></RowDefinition>
+            <RowDefinition Height=".9*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!-- Top Bar -->
+        <TextBlock x:Name="title" Grid.Row ="0" Text="Congratulations!" FontFamily = "Calibri" Margin="15,25,266,427" FontWeight ="Black" FontSize="40" Grid.Column="1" Grid.RowSpan="2"/>
+        <TextBlock x:Name="gameOver1" Grid.Row ="1" Text="You have stepped into the teleporter - and vanished into unknown realms beyond your imagination. Unfortunately, your journey ends here for now. I hope you enjoyed this demo, this is only the beginning . . ." TextAlignment="Center" FontFamily = "Adobe Arabic" Margin="79,74,79,239" FontWeight ="Black" FontSize="30" TextWrapping="Wrap" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="gameOver2" Grid.Row ="1" Text="Thank you for playing!" FontFamily = "Bahnschrift" Margin="226,252,228,153" FontWeight ="Black" FontSize="35" TextWrapping="Wrap" Grid.ColumnSpan="2"/>
+        <Button x:Name="exitBtn" Grid.Row ="1" Content="Click To Exit" Background= "DarkGreen" FontSize="30" Click ="exitBtn_Click_1" Margin="41,333,290,62" Grid.Column="1"/>
+
+    </Grid>
+</UserControl>
