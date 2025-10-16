@@ -20,7 +20,7 @@
     <!-- Main Game Screen -->
     <Grid Name = "MainGrid" Height="1024" Width="1024">
         <!--Background-->
-        <Image Name = "screenImg" Source= "backgrounds/bedroom.jpg" Panel.ZIndex="0" Stretch="Fill"/>
+        <Image Name = "screenImg" Source= "/Assets/Backgrounds/front.jpg" Panel.ZIndex="0" Stretch="Fill"/>
 
         <!--Controls-->
         <userControls:InventoryBtn x:Name="invBtn" Margin="896,860,60,66" Panel.ZIndex="1"  Visibility="Hidden"></userControls:InventoryBtn>

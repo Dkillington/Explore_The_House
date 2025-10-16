@@ -5,7 +5,7 @@ namespace WPFTutorial.Items
 {
     public class Sound
     {
-        private readonly string REMOVETHISPATH = $@"{Directory.GetCurrentDirectory()}\audio\";
+        private readonly string REMOVETHISPATH = $@"{Directory.GetCurrentDirectory()}\Assets\Audio\";
 
         public WaveOutEvent audioPlayer = new WaveOutEvent();
         private AudioFileReader audioFileReader;

@@ -276,7 +276,7 @@ namespace WPFTutorial
                 Debug.WriteLine($"Grabbing background image '{picPath}'");
                 try
                 {
-                    screenImg.Source = new BitmapImage(new Uri($"backgrounds/{picPath}.jpg", UriKind.Relative));
+                    screenImg.Source = new BitmapImage(new Uri($"Assets/Backgrounds/{picPath}.jpg", UriKind.Relative));
                 }
                 catch (Exception ex)
                 {

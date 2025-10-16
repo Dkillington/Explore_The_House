@@ -27,7 +27,7 @@ namespace WPFTutorial.View.UserControls
             bitmap.BeginInit();
 
             // Set the URI of the image file
-            bitmap.UriSource = new Uri($"pack://application:,,,/pictures/{imagePath}");
+            bitmap.UriSource = new Uri($"pack://application:,,,/Assets/Pictures/{imagePath}");
 
             // End initialization
             bitmap.EndInit();

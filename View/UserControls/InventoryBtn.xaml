@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="438.667" d:DesignWidth="462">
     <Grid Background="Transparent">
-        <Image x:Name ="image" Source="\icons\icon.png" Panel.ZIndex="0"></Image>
+        <Image x:Name ="image" Source="/Assets/Icons/InventoryIcon.png" Panel.ZIndex="0"></Image>
         <Button x:Name="inventoryBtn" Click="inventoryBtn_Click"  Panel.ZIndex="1" Background="Transparent" BorderBrush="Transparent" Opacity="0"></Button>
     </Grid>
 </UserControl>
