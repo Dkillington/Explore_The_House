@@ -88,7 +88,7 @@ namespace WPFTutorial
                     CreateNote(ItemEnums.diaryEntry1,
                         "Diary Page",
                         $"A diary entry of {protag_first} {protag_last}",
-                    $"August 20th,\n\nIt watches me from the other side, calling to me. There is no silence anymore-only its demonic voices in my head.\n\nI believed opening the gate would bring knowledge, advancement... salvation. Instead, I have awoken something ancient. Something unholy.\n\nToday, I enter the gate to end it. If anyone is reading this, please know that I tried.\n\nGod forgive me.");
+                    $"August 20th,\n\nIt watches me from the other side, calling to me. There is no silence anymore-only its demonic voices in my head.\n\nI believed opening the gate would bring knowledge, advancement... salvation. Instead, I have awoken something ancient. Something unholy.\n\nToday, I enter the gate to end this. If anyone is reading this and I have not returned, please know that I tried.\n\nGod forgive me.");
                     CreatePic(ItemEnums.oscarPic, "Picture of Oscar", "A picture of Oscar the Cat", "cat.jpg");
                     CreatePic(ItemEnums.groupPic, "Group Photo", "A grainy image of 3 scientists posing for a photo", "group.png");
                 }
