@@ -5,10 +5,8 @@ namespace WPFTutorial.Items
 {
     public class Sound
     {
-        private readonly string REMOVETHISPATH = $@"{Directory.GetCurrentDirectory()}\Assets\Audio\";
-
-        public WaveOutEvent audioPlayer = new WaveOutEvent();
-        private AudioFileReader audioFileReader;
+        public WaveOutEvent? audioPlayer;
+        private WaveFileReader audioFileReader;
         public SoundEnums name;
         public bool repeats = true;
 
@@ -18,13 +16,16 @@ namespace WPFTutorial.Items
             name = _name;
             repeats = _repeats;
 
-            var path = REMOVETHISPATH + @$"{name}.wav";
-            audioFileReader = new AudioFileReader(path);
+            // Bundled audio makes launches independent of the working directory.
+            var audio = typeof(Sound).Assembly.GetManifestResourceStream($"Audio.{name}.wav")
+                ?? throw new FileNotFoundException($"Missing bundled audio: {name}.wav");
+            audioFileReader = new WaveFileReader(audio);
         }
 
         // Play the audio
         public void Play()
         {
+            Stop();
             audioPlayer = new WaveOutEvent();
             audioPlayer.PlaybackStopped += Loop;
 
@@ -40,15 +41,15 @@ namespace WPFTutorial.Items
             // Completely delete audioplayer
             if (audioPlayer != null)
             {
-                audioPlayer.Stop();
                 audioPlayer.PlaybackStopped -= Loop;
+                audioPlayer.Stop();
                 audioPlayer.Dispose();
                 audioPlayer = null;
             }
         }
 
         // Called event to restart audio if it ends
-        private void Loop(object sender, StoppedEventArgs e)
+        private void Loop(object? sender, StoppedEventArgs e)
         {
             if (repeats)
             {
